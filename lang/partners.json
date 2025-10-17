@@ -1,0 +1,44 @@
+{
+    "bg": {
+        "headTitle": "Новини и публикации",
+        "siteTitle": "Адвокатско дружество Кирил Груйчев",
+        "indexMenu": "НАЧАЛО",
+        "aboutUsMenu": "ЗА НАС",
+        "newsMenu": "НОВИНИ И ПУБЛИКАЦИИ",
+        "partnerTitle": "Нашите партньори",
+        "partnerName1": "Име на Партньор 1",
+        "partnerContent1": "Кратко описание или дейност на партньора. Тук можеш да сложиш линк, ако има сайт или контакт.",
+        "partnerName2": "Име на Партньор 2",
+        "partnerContent2": "Кратка информация за втори партньор. Може да е фирма, кантора, консултант или организация.",
+
+
+
+        "footerText": "Адвокатско дружество Кирил Груйчев © Всички права запазени"
+    },
+    "en": {
+        "headTitle": "Our Partners",
+        "siteTitle": "Law Firm Kiril Gruychev",
+        "indexMenu": "HOME",
+        "aboutUsMenu": "ABOUT US",
+        "newsMenu": "NEWS AND PUBLICATIONS",
+        "partnerTitle": "Our Partners",
+        "partnerName1": "Partner Name 1",
+        "partnerContent1": "A short description or activity of the partner. You can add a link here if they have a website or contact.",
+        "partnerName2": "Partner Name 2",
+        "partnerContent2": "Brief information about the second partner. It can be a company, law firm, consultant, or organization.",
+        "footerText": "Law Firm Kiril Gruychev © All rights reserved"
+    },
+    "tr": {
+        "headTitle": "Ortaklarımız",
+        "siteTitle": "Kiril Gruychev Hukuk Bürosu",
+        "indexMenu": "ANA SAYFA",
+        "aboutUsMenu": "HAKKIMIZDA",
+        "newsMenu": "HABERLER VE YAYINLAR",
+        "partnerTitle": "Ortaklarımız",
+        "partnerName1": "Ortak Adı 1",
+        "partnerContent1": "Ortağın kısa açıklaması veya faaliyet alanı. Bir web sitesi veya iletişim bilgisi varsa buraya ekleyebilirsiniz.",
+        "partnerName2": "Ortak Adı 2",
+        "partnerContent2": "İkinci ortak hakkında kısa bilgi. Bu bir şirket, hukuk bürosu, danışman veya organizasyon olabilir.",
+        "footerText": "Kiril Gruychev Hukuk Bürosu © Tüm hakları saklıdır"
+    }
+}

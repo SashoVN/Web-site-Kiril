@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-key="headTitle">Новини и публикации</title>
+  <link rel="stylesheet" href="/css/news.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="/script/lang.js" defer></script>
+</head>
+<body>
+  <header class="main-header">
+    <h1><a href="index.html" data-key="siteTitle" class="site-title"> Адвокатско дружество Кирил Груйчев </a></h1>
+    <nav class="main-nav">
+      <ul class="nav-menu">
+        <li><a href="aboutUs.html" data-key="aboutUsMenu">ЗА НАС</a></li>
+        <li><a href="partners.html" data-key="partnersMenu">ПАРТНЬОРИ</a></li>
+
+        <li class="dropdown">
+            <a href="#" data-key="areasMenu">СФЕРИ НА ДЕЙНОСТ <span class="arrow">&#9662;</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="gamblingLaw.html"><i class="fas fa-dice"></i><span data-key="gamingMenu"> Хазартно право </span></a></li>
+              <li><a href="propertyLaw.html"><i class="fas fa-home"></i><span data-key="propertyMenu"> Вещно право </span></a></li>
+              <li><a href="debtCollection.html"><i class="fas fa-file-invoice-dollar"></i><span data-key="debtMenu"> Събиране на вземания </span></a></li>
+              <li><a href="corporateLaw.html"><i class="fas fa-building"></i><span data-key="corporateMenu"> Корпоративно право </span></a></li>
+              <li><a href="litigation.html"><i class="fas fa-gavel"></i><span data-key="litigationMenu"> Процесуално представителство </span> </a></li>
+              <li><a href="laborLaw.html"><i class="fas fa-user-tie"></i><span data-key="laborMenu"> Трудово право </span></a></li>
+              <li><a href="industrialProperty.html"><i class="fas fa-industry"></i><span data-key="industrialMenu"> Индустриална собственост </span> </a></li>
+              <li><a href="insuranceLaw.html"><i class="fas fa-shield-alt"></i><span data-key="insuranceMenu"> Застрахователно право </span></a></li>
+              <li><a href="commercialLaw.html"><i class="fas fa-handshake"></i><span data-key="commercialMenu"> Търговски сделки и облигационно право </span></a></li>
+            </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="news-container">
+    <h2 class="section-title" data-key="sectionTitle">Новини и публикации</h2>
+
+    <div class="news-post">
+      <h3 class="news-title" data-key="newsTitel1">🔎 Нов регламент относно AML</h3>
+      <p class="news-date" data-key="newsDate1">05 август 2025</p>
+      <p class="news-content" data-key="newsContent1">
+        Европейската комисия прие нова рамка за борба с прането на пари, която ще засегне хазартната индустрия в България. Новият регламент изисква по-строг контрол над идентификацията на клиентите.
+      </p>
+    </div>
+
+    <div class="news-post">
+      <h3 class="news-title" data-key="newsTitel2">📌 Промени в Закона за хазарта</h3>
+      <p class="news-date" data-key="newsDate2">29 юли 2025</p>
+      <p class="news-content" data-key="newsContent3">
+        Народното събрание прие изменения в Закона за хазарта, които предвиждат нови лицензионни изисквания и по-голям контрол върху онлайн игрите.
+      </p>
+    </div>
+
+    <div class="news-post">
+      <h3 class="news-title" data-key="newsTitel3">💼 Нови възможности за корпоративни клиенти</h3>
+      <p class="news-date" data-key="newsDate3">18 юли 2025</p>
+      <p class="news-content" data-key="newsContent3">
+        Нашата кантора предлага нови услуги за корпоративни клиенти, включително правен одит, изготвяне на договори и съдебна защита при спорове.
+      </p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <img src="/img/logo.png" alt="Лого" class="footer-logo">
+    <p class="footer-text" data-key="footerText">Адвокатско дружество Кирил Груйчев © Всички права запазени</p>
+  </footer>
+
+  <div class="lang-dropdown">
+    <button class="lang-btn">
+      <img id="current-flag" src="/img/bg.svg" alt="BG">
+    </button>
+      <div class="lang-menu">
+        <div onclick="setLanguage('bg')">
+          <img src="/img/bg.svg" alt="BG"> Български
+        </div>
+        <div onclick="setLanguage('en')">
+          <img src="/img/en.svg" alt="EN"> English
+        </div>
+        <div onclick="setLanguage('tr')">
+          <img src="/img/tr.svg" alt="TR"> Türkçe
+        </div>
+      </div>
+  </div>
+
+</body>
+</html>
