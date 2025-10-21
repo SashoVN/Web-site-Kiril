@@ -5,7 +5,7 @@ function setLanguage(lang) {
 
 function loadLanguage(lang) {
   const page = window.location.pathname.split("/").pop().replace(".html", "");
-  fetch(`/lang/${page}.json`)
+  fetch(`lang/${page}.json`)
     .then(res => res.json())
     .then(data => {
       document.querySelectorAll('[data-key]').forEach(el => {
@@ -20,9 +20,9 @@ function loadLanguage(lang) {
 
 function updateFlag(lang) {
   const flagMap = {
-    bg: '/img/bg.svg',
-    en: '/img/en.svg',
-    tr: '/img/tr.svg'
+    bg: 'img/bg.svg',
+    en: 'img/en.svg',
+    tr: 'img/tr.svg'
   };
   document.getElementById('current-flag').src = flagMap[lang];
 }
@@ -51,4 +51,5 @@ document.addEventListener('DOMContentLoaded', () => {
       menu.style.display = 'none';
     }
   });
+
 });
