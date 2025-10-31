@@ -45,7 +45,6 @@ startAutoSlide();
 // Слайшоу на началната страница
 const images = [
   "/img/test.png",
-  "/img/logo5.png"
 ];
 
 let currentIndex1 = 0;
@@ -61,5 +60,5 @@ function changeImage() {
   }, 500);
 }
 
-setInterval(changeImage, 5000); // сменя на всеки 5 секунди
+//setInterval(changeImage, 5000); // сменя на всеки 5 секунди
 // Слайшоу на началната страница

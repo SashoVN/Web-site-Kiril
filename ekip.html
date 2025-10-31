@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-key="headTitle">Екип</title>
+  <link rel="stylesheet" href="css/ekip.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="script/lang.js" defer></script>
+</head>
+<body>
+  <header class="main-header">
+    <h1><a href="index.html" data-key="siteTitle" class="site-title"> Адвокатско дружество Кирил Груйчев </a></h1>
+    <nav class="main-nav">
+      <ul class="nav-menu">
+        <li><a href="aboutUs.html" data-key="aboutMenu">ЗА НАС</a></li>
+        <li><a href="newsAndPublication.html" data-key="newsMenu">НОВИНИ И ПУБЛИКАЦИИ</a></li>
+        <!--
+        <li><a href="partners.html">ПАРТНЬОРИ</a></li>
+        -->
+
+        <li class="dropdown">
+            <a href="#" data-key="areasMenu">СФЕРИ НА ДЕЙНОСТ <span class="arrow">&#9662;</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="gamblingLaw.html"><i class="fas fa-dice"></i><span data-key="gamingMenu"> Хазартно право </span></a></li>
+              <li><a href="veshtno.html"><i class="fas fa-home"></i><span data-key="propertyMenu"> Вещно право </span></a></li>
+              <li><a href="sabiraneNaVzemaniq.html"><i class="fas fa-file-invoice-dollar"></i><span data-key="debtMenu"> Събиране на вземания </span></a></li>
+              <li><a href="korporativno.html"><i class="fas fa-building"></i><span data-key="corporateMenu"> Корпоративно право </span></a></li>
+              <li><a href="procesualno.html"><i class="fas fa-gavel"></i><span data-key="litigationMenu"> Процесуално представителство </span> </a></li>
+              <li><a href="trudovo.html"><i class="fas fa-user-tie"></i><span data-key="laborMenu"> Трудово право </span></a></li>
+              <li><a href="imigracionno.html"><i class="fas fa-passport"></i><span data-key="imigrMenu"> Имиграционно право </span></a></li>
+              <li><a href="nesastoqtelnostLikvidaciq.html"><i class="fas fa-file-invoice-dollar"></i><span data-key="nesMenu"> НЕСЪСТОЯТЕЛНОСТ И ЛИКВИДАЦИЯ </span></a></li>
+              <li><a href="administrativno.html"><i class="fas fa-university"></i><span data-key="adminstMenu">Административно право и Административнонаказателно право</span></a></li>
+              <li><a href="industrialna.html"><i class="fas fa-industry"></i><span data-key="industrialMenu"> Индустриална собственост </span> </a></li>
+              <li><a href="zastrahovatelno.html"><i class="fas fa-shield-alt"></i><span data-key="insuranceMenu"> Застрахователно право </span></a></li>
+              <li><a href="targovskiSdelkiObligacionno.html"><i class="fas fa-handshake"></i><span data-key="commercialMenu"> Търговски сделки и облигационно право </span></a></li>
+            </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="about-container">
+    <div class="about-image">
+      <img src="img/crew.png" alt="Екип на кантората" />
+    </div>
+    <div class="about-text">
+      <h2 id="aboutUs-title" data-key="ekip-title">Екип</h2>
+      <p id="aboutUs-text" data-key="ekipText1">
+        В основата на нашата кантора стои екип, за който прецизността е принцип, а дискретността - стандарт.<br>
+        Обединяваме опит, визия и стратегическо мислене, за да създаваме решения, които надхвърлят очакванията.
+      </p>
+      <p data-key="ekipText2">
+        Нашата сила е в синергията - между юристи, които споделят еднакъв усет към детайла и отговорност към резултата.<br>
+        Работим тихо, целенасочено и с разбиране за стойността на доверието.
+      </p>
+      <p data-key="ekipText3">
+        Всяка задача е подход, всеки клиент - партньорство.
+        Нашият екип не просто прилага закона - ние го моделираме спрямо визията и интереса на клиента.
+        Това е почеркът, по който ни разпознават: <strong>елегантност в израза, дълбочина в анализа, сигурност в резултата.</strong>
+      </p>
+    </div>
+  </div>
+
+  <footer class="aboutUs-footer">
+      <img src="img/logo.png" alt="Лого" class="footer-logo">
+      <p class="footer-text" data-key="footerText">Адвокатско дружество Кирил Груйчев © Всички права запазени</p>
+  </footer>
+
+  <div class="lang-dropdown">
+    <button class="lang-btn">
+      <img id="current-flag" src="img/bg.svg" alt="BG">
+    </button>
+      <div class="lang-menu">
+        <div onclick="setLanguage('bg')">
+          <img src="img/bg.svg" alt="BG"> Български
+        </div>
+        <div onclick="setLanguage('en')">
+          <img src="img/en.svg" alt="EN"> English
+        </div>
+        <div onclick="setLanguage('tr')">
+          <img src="img/tr.svg" alt="TR"> Türkçe
+        </div>
+      </div>
+  </div>
+
+</body>
+</html>

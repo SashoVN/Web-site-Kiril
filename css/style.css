@@ -8,7 +8,9 @@
 body, html {
     height: 100%;
     font-family: "Segoe UI", sans-serif; 
-    background-color: #E0E0E0;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    /*background-color: #E0E0E0;*/
 }
 
 .container {
@@ -34,7 +36,9 @@ body, html {
 
 .right-side {
     flex: 1;
-    background-color: #E0E0E0;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    /*background-color: #E0E0E0;*/
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -76,12 +80,12 @@ body, html {
 .menu li a {
   text-decoration: none;
   font-size: 25px;
-  color: #000;
+  color: #ffffff;
   font-weight: 500;
 }
 
 .menu li a:hover {
-  color: #ec1414;
+  color: #585858;
 }
 
 .hero-content {
@@ -133,7 +137,9 @@ body, html {
 
 .right-side {
     flex: 1;
-    background-color: #E0E0E0;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    /*background-color: #E0E0E0;*/
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -157,9 +163,9 @@ body, html {
 .slider-track-container {
   overflow: hidden;
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid #383838;
   border-radius: 16px;
-  background-color: #f8f8f8;
+  background-color: #383838;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -175,7 +181,8 @@ body, html {
   padding: 40px;
   box-sizing: border-box;
   text-align: center;
-  background-color: #e0e0e0;
+  background-color: #1C1C1C;
+  color: #FFFFFF;
   list-style: none;
 
   display: flex;
@@ -185,11 +192,11 @@ body, html {
 }
 
 .slider-btn {
-  background-color: #e0e0e0;
+  background-color: #1C1C1C;
   border: none;
   font-size: 42px;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
   border-radius: 999px; 
   width: 56px;
   height: 56px;
@@ -209,15 +216,18 @@ body, html {
   text-align: center;
   font-size: clamp(20px, 3vw, 21px); /* Адаптивен размер */
   line-height: 1.4;
+  color: #FFFFFF;
 }
 
 .slider-slide p {
   font-size: 18px;
   font-family: 'Roboto Slab', serif;
+  color: #FFFFFF;
+
 }
 
 .slider-btn:hover {
-  background-color: #ccc;
+  background-color: #383838;
   transform: scale(1.1);
 }
 
@@ -240,11 +250,11 @@ body, html {
 
 .slider-track li a {
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
 }
 
 .slider-track li a:hover {
-  color: #ec1414;
+  color: #585858;
 }
 
 .homepage-footer {
@@ -254,9 +264,9 @@ body, html {
   justify-content: center;
   padding: 40px 20px;
   text-align: center;
-  background-color: #e0e0e0;
+  background-color: #1C1C1C;
   font-family: 'Segoe UI', sans-serif;
-  color: #444;
+  color: #ffffff;
   position: relative;
   z-index: 2;
 }
@@ -279,8 +289,8 @@ body, html {
 }
 
 .lang-btn {
-  background: #fff;
-  border: 2px solid #ccc;
+  background:#383838;
+  border: 2px solid #383838;
   border-radius: 50%;
   padding: 6px;
   cursor: pointer;
@@ -307,7 +317,7 @@ body, html {
   position: absolute;
   bottom: 60px;
   right: 0;
-  background: white;
+  background: #383838;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -323,7 +333,7 @@ body, html {
 }
 
 .lang-menu div:hover {
-  background: #f0f0f0;
+  background: #1C1C1C;
 }
 
 .lang-menu img {
