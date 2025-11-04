@@ -607,6 +607,7 @@ body, html {
     font-size: 14px;
     overflow-wrap: break-word;
     word-break: break-word;
+    max-width: 100%;
   }
 
 
@@ -685,6 +686,7 @@ body, html {
     font-size: 12px;
     overflow-wrap: break-word;
     word-break: break-word;
+    max-width: 100%;
   }
 
   .slider-btn {
