@@ -145,7 +145,7 @@ body, html {
     padding: 20px;
     position: relative; /
 }
-
+/*
 .slider {
     position: absolute; 
     top: 50%;
@@ -159,6 +159,41 @@ body, html {
     z-index: 5;
     align-items: center;
 }
+*/
+
+.slider {
+  position: relative;
+  width: 90%;
+  max-width: 850px;
+  margin: 200px auto 40px auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; 
+  top: 0;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  flex-wrap: wrap;
+}
+
+.logo-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+}
+
 
 .slider-track-container {
   overflow: hidden;
@@ -341,3 +376,331 @@ body, html {
   height: 16px;
   border-radius: 2px;
 }
+
+
+/* ====== Responsive Design ====== */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-side {
+    width: 100%;
+    height: 40vh;
+    clip-path: none;
+  }
+
+  .left-side img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .right-side {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav {
+    padding: 20px 10px;
+  }
+
+  .logo-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .menu-nav {
+    width: 100%;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .menu li a {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding: 40px 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .slider {
+    width: 95%;
+  }
+
+  .slider-slide {
+    padding: 20px;
+  }
+
+  .homepage-footer {
+    padding: 30px 10px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+}
+
+/* ====== Малки екрани (телефони под 600px) ====== */
+@media (max-width: 600px) {
+  .logo-title {
+    font-size: 22px;
+  }
+
+  .menu li a {
+    font-size: 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 25px 0;
+  }
+
+  .nav.scrolled {
+    background-color: rgba(28, 28, 28, 0.95);
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+  }
+
+  .logo-title {
+    transition: font-size 0.3s ease;
+  }
+
+  .nav.scrolled .logo-title {
+    font-size: 22px;
+  }
+
+  /* Да не влиза съдържанието под менюто */
+  body {
+    padding-top: 120px;
+  }
+}
+
+
+/* === Responsive настройка за текста в слайдера === */
+
+/* Основни настройки (десктоп) */
+.slider-slide h3 {
+  font-size: clamp(20px, 2vw, 24px);
+  line-height: 1.4;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.slider-slide p {
+  font-size: clamp(16px, 1.8vw, 20px);
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* === За таблети === */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-side {
+    width: 100%;
+    height: 35vh;
+    clip-path: none;
+  }
+
+  .left-side img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .left-side img#slideshow {
+    margin-top: 120px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .right-side {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center; /* центрира логото */
+    padding: 20px 0;
+  }
+
+  .menu-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;     /* центриране на менюто */
+  }
+
+  .menu {
+    flex-direction: row;      /* хоризонтално */
+    gap: 15px;
+    justify-content: center;  /* центриране на менюто */
+    flex-wrap: wrap;             /* ако няма място, да се прехвърля на следващ ред */
+  }
+
+  .menu li a {
+    font-size: 20px;
+  }
+
+  /* Слайдър под менюто */
+  .slider {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .slider-slide {
+    padding: 20px;
+  }
+
+  .slider-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 32px;
+  }
+
+  .homepage-footer {
+    margin-top: 325px;
+    padding: 25px 10px;
+  }
+
+
+}
+
+
+/* === За телефони === */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .left-side img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .right-side {
+    width: 100%;
+    padding: 15px 10px;
+  }
+
+  .left-side img#slideshow {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Меню хоризонтално */
+  .nav {
+    flex-direction: column;
+    align-items: center; /* центрира логото */
+    padding: 15px 0;
+  }
+
+  .menu-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;     /* центриране на менюто */
+  }
+
+  .logo-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: row;       /* хоризонтално */
+    gap: 10px;
+    justify-content: center;   /* центриране на менюто */
+    flex-wrap: wrap;           /* да се прехвърля на следващ ред при нужда */
+  }
+
+  .menu li a {
+    font-size: 16px;
+  }
+
+  /* Слайдър под менюто */
+  .slider {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .slider-slide {
+    padding: 15px;
+  }
+
+  .slider-slide h3 {
+    font-size: 16px;
+  }
+
+  .slider-slide p {
+    font-size: 14px;
+  }
+
+  .slider-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 26px;
+    margin: 0 5px;
+  }
+
+  .homepage-footer {
+    margin-top: 150px;
+    padding: 25px 10px;
+  }
+
+  .footer-logo {
+    width: 80px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+}
+

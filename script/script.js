@@ -62,3 +62,13 @@ function changeImage() {
 
 //setInterval(changeImage, 5000); // сменя на всеки 5 секунди
 // Слайшоу на началната страница
+
+window.addEventListener('scroll', function() {
+  const nav = document.querySelector('.nav');
+  if (window.scrollY > 50) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
+

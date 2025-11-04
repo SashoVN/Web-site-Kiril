@@ -265,3 +265,120 @@ body {
   height: 16px;
   border-radius: 2px;
 }
+
+/* ======= Таблети ======= */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Основно меню */
+  .main-nav .nav-menu {
+    display: flex;
+    justify-content: center; /* центрира линковете */
+    gap: 30px;
+    position: relative;      /* за абсолютното позициониране на dropdown */
+    flex-wrap: nowrap;       /* не минава на нов ред */
+  }
+
+  .nav-menu li {
+    position: relative;      /* родител на dropdown */
+  }
+
+  .nav-menu li a {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+
+  /* Dropdown меню */
+  .dropdown-menu {
+    position: absolute;      /* извън потока */
+    top: 100%;               /* под линка */
+    left: 0;
+    width: 250px;            /* фиксирана ширина */
+    background: #1C1C1C;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: none;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+
+  .dropdown-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Премахваме hover ефекта за tablet */
+  .dropdown:hover .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /* Активен клас, който ще се добавя с JS при клик */
+  .dropdown.active .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+/* ======= Телефон ======= */
+@media (max-width: 480px) {
+  .news-title {
+    font-size: 16px;
+  }
+
+  .news-content {
+    font-size: 13px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .nav-menu li a {
+    font-size: 18px;
+  }
+
+  
+  .dropdown-menu {
+    position: absolute; 
+    top: 100%;
+    left: 0%;
+    right: 100%;
+    display: none;      
+    background: #1C1C1C;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 1000;
+    text-align: left;
+    transform: translateX(-50%);
+    min-width: 220px; 
+  }
+
+  .dropdown-menu li a {
+    font-size: 12px;
+    padding: 10px 12px; 
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+
+    .main-nav .nav-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-menu li {
+    position: relative; 
+    text-align: center;
+  }
+  
+}
