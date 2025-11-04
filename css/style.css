@@ -603,6 +603,12 @@ body, html {
     padding: 25px 10px;
   }
 
+  .slider-slide h3 {
+    font-size: 14px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
 
 }
 
@@ -677,9 +683,9 @@ body, html {
 
   .slider-slide h3 {
     font-size: 12px;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
-
-
 
   .slider-btn {
     width: 38px;
