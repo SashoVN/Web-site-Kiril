@@ -676,12 +676,10 @@ body, html {
   }
 
   .slider-slide h3 {
-    font-size: 16px;
+    font-size: 12px;
   }
 
-  .slider-slide p {
-    font-size: 14px;
-  }
+
 
   .slider-btn {
     width: 38px;
