@@ -72,3 +72,44 @@ window.addEventListener('scroll', function() {
   }
 });
 
+
+
+
+  document.getElementById("menuToggle").addEventListener("click", function() {
+    document.getElementById("mobileMenu").classList.toggle("show")
+  });
+
+
+  // --- Показване/скриване на основното мобилно меню ---
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("show");
+  });
+}
+
+// --- Dropdown за "Сфери на дейност" ---
+const activityToggle = document.getElementById("activityToggle");
+const activityMenu = document.getElementById("activityMenu");
+
+if (activityToggle && activityMenu) {
+  activityToggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    activityMenu.classList.toggle("show");
+  });
+}
+
+
+  // Изчакваме страницата да се зареди напълно
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.querySelector(".mobile-menu-icon");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener("click", function () {
+        mobileMenu.classList.toggle("show");
+      });
+    }
+  });

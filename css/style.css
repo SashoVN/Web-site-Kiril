@@ -697,8 +697,8 @@ body, html {
   }
 
   .homepage-footer {
-    margin-top: 150px;
-    padding: 25px 10px;
+    margin-top: -320px;
+    
   }
 
   .footer-logo {
@@ -710,3 +710,203 @@ body, html {
   }
 }
 
+@media (max-width: 768px) {
+
+  body {
+    background-color: #1C1C1C;
+    color: white;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    margin-top: -100px;
+    background-color: #1C1C1C;
+    position: relative;
+    z-index: 10;
+  }
+
+  .mobile-logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* малко разстояние между текста и иконата */
+  }
+
+  .mobile-menu-icon {
+   font-size: 26px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* HERO изображението с триъгълна форма */
+  .mobile-hero {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+  }
+
+  .mobile-hero-img {
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  }
+
+  .mobile-hero-text {
+    text-align: center;
+    margin-top: -130px;
+    padding-bottom: 200px;
+    padding: -230px 20px 60px 20px;
+  }
+
+  .mobile-hero-text h4 {
+    color: #888;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .mobile-hero-text h2 {
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.4;
+  }
+
+  /* Скрити по подразбиране */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1C1C1C;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    left: 0;
+    padding: 15px 0;
+    z-index: 9;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+
+  .mobile-menu li {
+    list-style: none;
+    margin: 12px 0;
+  }
+
+  .mobile-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .mobile-menu li a:hover {
+    color: #ff6f61;
+  }
+
+}
+
+/* Скриваме мобилното меню за десктоп */
+.mobile-header,
+.mobile-hero,
+.mobile-hero-text,
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-header,
+  .mobile-hero,
+  .mobile-hero-text {
+    display: block;
+  }
+}
+
+
+/* --- По подразбиране (десктоп) --- */
+.mobile-header,
+.mobile-hero,
+.mobile-hero-text {
+  display: none;
+}
+
+/* --- Мобилна версия --- */
+@media (max-width: 768px) {
+  /* Скриваме десктоп елементите на малки екрани */
+  .logo-title,
+  .menu-nav,
+  #slideshow,
+  .slider {
+    display: none !important;
+  }
+
+  /* Показваме само мобилните елементи */
+  .mobile-header,
+  .mobile-hero,
+  .mobile-hero-text {
+    display: block !important;
+  }
+}
+
+/* Dropdown подменю вътре в мобилното меню */
+.mobile-menu .dropdown-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  width: 90%;
+  padding: 10px 0;
+}
+
+.mobile-menu .dropdown-menu li {
+  margin: 6px 0;
+}
+
+.mobile-menu .dropdown-menu a {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.mobile-menu .dropdown-menu a:hover {
+  color: #ff6f61;
+}
+
+.mobile-menu .dropdown-menu.show {
+  display: flex;
+}
+
+/* Малка стрелка */
+.arrow {
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+/* Подравняване вляво на текстовете в мобилното меню */
+.mobile-menu li {
+  text-align: left;
+  width: 100%;
+  padding-left: 25px;
+}
+
+.mobile-menu li a {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
