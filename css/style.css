@@ -727,11 +727,11 @@ body, html {
     text-align: center;     /* Центрира текста вътре */
     background-color: #1C1C1C;
     color: #fff;
-    padding: 15px 0
+    margin-top: -80px;
   }
 
   .mobile-logo {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
     font-family: 'Roboto Slab', serif;
