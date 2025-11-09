@@ -721,22 +721,22 @@ body, html {
 
   .mobile-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 20px;
-    margin-top: -100px;
+    flex-direction: column; /* Текст и икона подредени вертикално */
+    align-items: center;    /* Центрира хоризонтално */
+    justify-content: center;/* Центрира вертикално */
+    text-align: center;     /* Центрира текста вътре */
     background-color: #1C1C1C;
-    position: relative;
-    z-index: 10;
+    color: #fff;
+    padding: 15px 0
   }
 
   .mobile-logo {
-    font-size: 22px;
+    font-size: 40px;
     font-weight: bold;
     color: white;
     font-family: 'Roboto Slab', serif;
     display: flex;
-    align-items: center;
+    text-align: center;
     gap: 10px; /* малко разстояние между текста и иконата */
   }
 
@@ -913,4 +913,27 @@ body, html {
   display: block;
   width: 100%;
   text-align: left;
+}
+@media (max-width: 768px) {
+  .mobile-header {
+    display: flex;
+    flex-direction: column; /* Текст и икона подредени вертикално */
+    align-items: center;    /* Центрира хоризонтално */
+    justify-content: center;/* Центрира вертикално */
+    text-align: center;     /* Центрира текста вътре */
+    background-color: #1C1C1C;
+    color: #fff;
+    padding: 15px 0
+  }
+
+  .mobile-header .mobile-logo {
+    /*font-size: 1.2rem;*/
+    font-weight: 600;
+    margin-bottom: 8px; /* малко разстояние между текста и иконата */
+  }
+
+  .mobile-header .mobile-menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+  }
 }
