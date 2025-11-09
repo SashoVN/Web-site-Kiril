@@ -861,6 +861,10 @@ body, html {
   .mobile-hero-text {
     display: block !important;
   }
+
+  .homepage-footer{
+    margin-top: 50px;
+  }
 }
 
 /* Dropdown подменю вътре в мобилното меню */
