@@ -795,8 +795,6 @@ body, html {
     position: absolute;
     top: 60px;
     width: 100%;
-    left: 0;
-    padding: 15px 0;
     z-index: 9;
     display: flex; /* показва менюто при клик */
     margin-top: 80px;
@@ -815,6 +813,7 @@ body, html {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    text-align: right;
   }
 
   .mobile-menu li a:hover {
@@ -889,7 +888,7 @@ body, html {
   margin-top: 8px;
   background-color: #2a2a2a;
   border-radius: 8px;
-  width: 90%;
+  width: 100%;
   padding: 10px 0;
 }
 
@@ -918,15 +917,16 @@ body, html {
 
 /* Подравняване вляво на текстовете в мобилното меню */
 .mobile-menu li {
-  text-align: left;
+  text-align: center;
   width: 100%;
-  padding-left: 25px;
+  align-items: center;
 }
 
 .mobile-menu li a {
   display: block;
   width: 100%;
   text-align: center;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .mobile-header {
