@@ -741,12 +741,13 @@ body, html {
   }
 
   .mobile-menu-icon {
-   font-size: 26px;
+   font-size: 50px;
     cursor: pointer;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+     
   }
 
   /* HERO изображението с триъгълна форма */
@@ -788,7 +789,6 @@ body, html {
 
   /* Скрити по подразбиране */
   .mobile-menu {
-    display: none;
     flex-direction: column;
     align-items: center;
     background-color: #1C1C1C;
@@ -798,6 +798,8 @@ body, html {
     left: 0;
     padding: 15px 0;
     z-index: 9;
+    display: flex; /* показва менюто при клик */
+    margin-top: 60px;
   }
 
   .mobile-menu.show {
@@ -817,6 +819,18 @@ body, html {
 
   .mobile-menu li a:hover {
     color: #ff6f61;
+  }
+
+
+  .dropdown-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    padding: 10px;
+  }
+
+  .dropdown-menu.show {
+    display: flex; /* показва менюто при клик */
   }
 
 }

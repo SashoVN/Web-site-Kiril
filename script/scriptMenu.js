@@ -14,3 +14,17 @@ const dropdowns = document.querySelectorAll('.dropdown')
     });
   });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+const dropdownToggle = document.querySelector(".dropdown > a");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+if (dropdownToggle && dropdownMenu) {
+  dropdownToggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    dropdownMenu.classList.toggle("show"); // показва/скрива менюто
+  });
+}
+});
+
+
